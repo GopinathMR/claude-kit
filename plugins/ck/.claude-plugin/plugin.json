@@ -1,0 +1,21 @@
+{
+  "name": "ck",
+  "version": "0.0.1",
+  "description": "claude-kit core plugin",
+  "author": {
+    "name": "gopinath rangappa"
+  },
+  "homepage": "https://gopinathmr/claude-kit",
+  "repository": "https://github.com/gopinathmr/claude-kit",
+  "license": "Apache-2.0",
+  "keywords": [
+    "enterprise",
+    "workflow",
+    "automation",
+    "claude",
+    "spec-kit"
+  ],
+  "commands": [
+    "./commands/ck.init.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "claude-kit",
+  "owner": {
+    "name": "GopinathMR",
+    "email": "mr.gopinath@outlook.com"
+  },
+  "metadata": {
+    "description": "Claude-kit is spec-kit inspired developer workflow kit optimized for Claude",
+    "version": "0.0.1"
+  },
+  "plugins": [
+    {
+      "name": "ck",
+      "source": "./plugins/ck"
+    }
+  ]
+}
