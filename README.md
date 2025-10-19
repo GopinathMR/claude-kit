@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./media/claude-kit-logo.png"/>
+    <img src="./media/claude-kit-logo.png" width="20%" length = "20%" alttext="Claude Kit"/>
     <h1> Claude Kit</h1>
     <h3><em>Claude native spec driven software development kit.</em></h3>
 </div>
