@@ -4,13 +4,47 @@ name: git-workflow
 description: This skill manages the complete git commit workflow including staging, creating conventional commit messages, and pushing changes.
 ---
 
+## Required Git Commands
+
+This skill requires permission to run the following git commands. Request approval once at the beginning of the workflow:
+
+**Read-only commands (inspection):**
+- `git status` / `git status --porcelain` - Check repository status
+- `git diff` - View unstaged changes
+- `git diff --cached` / `git diff --staged` - View staged changes
+- `git diff --staged --stat` - Show summary of staged changes
+- `git log -1` - Verify last commit
+- `git remote get-url origin` - Check remote configuration
+- `git branch --show-current` - Get current branch name
+
+**Write commands (modifications):**
+- `git add <files>` / `git add .` - Stage changes
+- `git commit -m "<message>"` - Create commit
+- `git push origin <branch>` - Push to remote
+- `git push -u origin <branch>` - Push new branch to remote
+
+**Permission Request:**
+At the start of the workflow, present this list and ask:
+"This workflow will use the git commands listed above. Do you approve running these commands for this repository?"
+
+Only ask for permission once per repository. Do not prompt again for subsequent commits in the same session.
+
 ## Workflow Steps
 
 Follow these steps in order to complete the git workflow:
 
+### 0. Request Permission (First Time Only)
+
+Before starting the workflow, if this is the first time running for this repository:
+- Display the list of required git commands from the "Required Git Commands" section
+- Ask: "This workflow will use the git commands listed above. Do you approve running these commands for this repository?"
+- Wait for user approval
+- If approved: proceed with the workflow and remember approval for this repository
+- If declined: exit the workflow
+
 ### 1. Check Repository Status
 
-First, check the current git status to identify unstaged and staged files:
+Check the current git status to identify unstaged and staged files:
 - Run `git status --porcelain` to get a machine-readable status
 - Identify files that are modified but not staged (prefixed with ` M` or `M `)
 - Identify new files that are untracked (prefixed with `??`)
