@@ -21,6 +21,6 @@ Claude Kit is an open source toolkit which provide Claude native software develo
     ```
 * Restart Claude REPL and all slash commands start with `/ck.` prefix.
 
-## Slash Commands
+## ck plugin features
 
-### ck.init
+Features are documented in [README.md](./plugins/ck/README.md) 
