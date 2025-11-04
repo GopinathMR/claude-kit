@@ -51,10 +51,8 @@ This command will:
 ## Example Usage
 
 ```
-User: /ck feature
-Claude: Please describe the feature you want to develop:
+User: /ck.feature <feature description as multi line text>
 
-User: Add user authentication with OAuth
 Claude: I've analyzed your codebase. Here are my assumptions:
 1. [Assumption] Using existing Express.js backend
 2. [Assumption] JWT tokens for session management
@@ -64,4 +62,17 @@ Here are my questions:
 1. Which OAuth providers? [Multi-choice: a) Google, b) GitHub, c) Both, d) Other]
 2. Token expiration time? [Default: 24 hours]
 ...
+
+User : 1a, 2. 12 hrs
+
+Claude: Here are your requirements:
+1. [Requirement] Add OAuth support for Google and GitHub
+2. [Requirement] Token expiration time should be 12 hours
+
+User : Looks good. break it down into tasks and update as task and sub-tasks in linear using Linear MCP
+Claude : Here are your tasks:
+1. [Task] Add OAuth support for Google
+2. [Task] Add OAuth support for GitHub
+...
+Creating tasks in Linear using Linear MCP...
 ```
