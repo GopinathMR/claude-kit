@@ -12,6 +12,10 @@
     {
       "name": "ck",
       "source": "./plugins/ck"
+    },
+    {
+      "name": "rs",
+      "source": "./plugins/rs"
     }
   ]
 }

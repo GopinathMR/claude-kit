@@ -8,6 +8,7 @@ This command will:
    - Analyze the codebase to understand the current architecture, frameworks, and patterns. Understand best practices or recommendations for this repo in #CLAUDE.md if exists and in #README.md.
    - Identify relevant files, modules, and dependencies
    - Use available skills (e.g., code-reviewer, architect-review) to follow best practices
+   - Use available skills or sub-agents specific to programming language or tech stack to follow best practices
 
 3. **Make Assumptions & Ask Clarifications**:
    - List all assumptions made (numbered)
